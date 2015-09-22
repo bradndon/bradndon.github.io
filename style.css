@@ -1,8 +1,15 @@
 .jumbotron {
-  background-color: #bf5fff;
+  background-color: #348889;
 }
 
-body { padding-top: 70px; }
+body {
+  background-color: #CECECE;
+  padding-top: 70px;
+}
+
+p {
+  color: #000000
+}
 
 
 
