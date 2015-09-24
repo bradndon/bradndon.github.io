@@ -2,9 +2,21 @@
   background-color: #CECECE;
 }
 
+.footer {
+  background: #348889;
+  margin-top: 50px;
+  height: 60px;
+}
+
+.infoBtn {
+  margin-bottom: 10px;
+
+}
+
 body {
   background-color: #CECECE;
   padding-top: 70px;
+
 }
 
 .btn-primary {
@@ -57,7 +69,19 @@ p {
 .projectImage {
   width: 100%;
 }
+.descr {
+  color: #FFFFFF;
+  margin-top: 10px;
 
+}
+
+  @media only screen and (max-width: 1000px) {
+    .title {
+      padding-top: 20px;
+    }
+
+
+}
 .pro1 {
   padding-top: 0px;
   background-color: #303030;
