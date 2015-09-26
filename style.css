@@ -4,9 +4,14 @@
 
 .footer {
   background: #348889;
+  padding-left: 10px;
   margin-top: 50px;
   height: 60px;
+
 }
+
+.footer > p { display: table-cell; height: 60px; vertical-align: middle; }
+
 
 .infoBtn {
   margin-bottom: 10px;
