@@ -1,98 +1,92 @@
-<!doctype html>
-<html>
-  <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#"><img id="headshot" src="brandon_headshot.jpg"/></a>
+---
+layout: default
+---
 
-    </div>
-    <div class="collapse navbar-collapse" id="nav">
-      <!-- <p class="navbar-text">Signed in as Mark Otto</p> -->
-      <ul class="nav navbar-nav">
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#about">About Me</a></li>
-      </ul>
-    </div>
-
-</nav>
-
-  <div class="container">
-    <div class="jumbotron">
-      <div class="container">
-      <h1>Hi, I'm Brandon!</h1>
-      <p>I am an aspiring software developer.</p>
-      <p><a class="btn btn-primary btn-lg" href="#about" role="button">Learn more</a></p>
-      </div>
-    </div>
-    <a name="projects"></a>
-
-    <div class="page-header">
-      <h1>Projects</h1>
-    </div>
-    <div class="row">
-      <div class="col-md-6 col-sm-6 pro1">
-        <h3 class="title text-center">WWU Classfinder iOS App</h3>
-        <img class="img-responsive center-block" src="classfinder.png"/>
-        <p class="descr">An app I made to help WWU students find classes. A complete redesign of the web version, making it easier and more appealing to the eye. It adds the functionality of seeing the Rate My Professors scores right in the app. You can also easily create schedules to see potential class schedules for a given quarter.</p>
-        <a class="btn btn-primary infoBtn" href="https://itunes.apple.com/us/app/wwu-classfinder/id860241453?mt=8">See on App Store</a>
-      </div>
-      <div class="col-md-6 col-sm-6 pro2">
-        <h3 class="title text-center">WPF Scavenger Hunt Creator</h3>
-        <img class="img-responsive center-block" src="wpfScavenger.png"/>
-
-        <p class="descr">A custom PDF template creator made for a local math teacher to help streamline some of the work that goes into her daily activities. You can specify images for each problem and solution and select options for creation.</p>
-        <a class="btn btn-primary infoBtn" href="https://github.com/bradndon/Scavenger_Hunt">View Source Code</a>
-      </div>
-
-    </div>
-    <a name="about"></a>
-
-    <div class="page-header">
-      <h1>About Me</h1>
-    </div>
-    <div class="row">
-      <div class="col-md-3 col-sm-6 col-xs-6 about1">
-        <h4 class="title text-center">Work</h3>
-        <h6 style="color:#FFF"><img class="edimg" src="html.png"/>Viking Union Web Developer</h6>
-        <p style="color:#FFF; font-size: 12px">Western Washington University
-        <br />October 2015 -
-        <br />Develop and Maintain web based applications for Western Washington University's Viking Union and Associated Students.</p>
-      </div>
-      <div class="col-md-3 col-sm-6 col-xs-6  about2">
-        <h4 class="title text-center">Education</h3>
-        <h6 style="color:#FFF"><img class="edimg" src="wetsern.png"/>Western Washington University</h6>
-        <p style="color:#FFF; font-size: 12px">Bachelor's of Science in Computer Science
-        <br />Expected Graduation Date: Fall 2016
-        <br />Current GPA: 3.74</p>
-        <h6 style="color:#FFF"><img class="edimg" src="jaguars.png"/> Emerald Ridge High School</h6>
-        <p style="color:#FFF; font-size: 12px">High School Diploma
-        <br />Graduation Date: June 2013
-        <br />GPA: 3.93</p>
-      </div>
-      <div class="col-md-3 col-sm-6 col-xs-6 about1">
-        <h4 class="title text-center">Interests</h3>
-      </div>
-      <div class="col-md-3 col-sm-6 col-xs-6 about2">
-        <h4 class="title text-center">Technologies</h3>
-      </div>
-
+<div class="">
+  <div class="jumbotron">
+    <div class="container">
+    <h1>Hi, I'm Brandon!</h1>
+    <p>I am an aspiring software developer.</p>
+    <p><a class="btn btn-primary btn-lg" href="#about" role="button">Learn more</a></p>
     </div>
   </div>
-  <div class="footer text-center"><p style="color:#FFF">&copy; Brandon Fox 2015</p></div>
+  <a name="projects"></a>
 
-</body>
+  <div class="page-header">
+    <h1>Projects</h1>
+  </div>
+  <div class="row">
+    <div class="col-md-12 col-sm-12 pro1">
+      <h3 class="title text-center">WWU Classfinder iOS App</h3>
+      <img class="img-responsive center-block" src="classfinder.png"/>
+      <p class="descr">An app I made to help WWU students find classes. A complete redesign of the web version, making it easier and more appealing to the eye. It adds the functionality of seeing the Rate My Professors scores right in the app. You can also easily create schedules to see potential class schedules for a given quarter.</p>
+      <a class="btn btn-primary infoBtn" href="https://itunes.apple.com/us/app/wwu-classfinder/id860241453?mt=8">See on App Store</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 col-sm-12 pro2">
+      <h3 class="title text-center">WPF Scavenger Hunt Creator</h3>
+      <img class="img-responsive center-block" src="wpfScavenger.png"/>
 
-</html>
+      <p class="descr">A custom PDF template creator made for a local math teacher to help streamline some of the work that goes into her daily activities. You can specify images for each problem and solution and select options for creation.</p>
+      <a class="btn btn-primary infoBtn" href="https://github.com/bradndon/Scavenger_Hunt">View Source Code</a>
+    </div>
+
+  </div>
+  <a name="about"></a>
+
+  <div class="page-header">
+    <h1>About Me</h1>
+  </div>
+  <div class="row">
+    <div class="col-md-6 col-sm-6 col-xs-6 about1">
+      <h4 class="title text-center">Work</h3>
+      <h6 style="color:#FFF"><img class="edimg" src="html.png"/>Viking Union Web Developer</h6>
+      <p style="color:#FFF; font-size: 12px">Western Washington University
+      <br />October 2015 -
+      <br />Develop and Maintain web based applications for Western Washington University's Viking Union and Associated Students.</p>
+    </div>
+    <div class="col-md-6 col-sm-6 col-xs-6  about2">
+      <h4 class="title text-center">Education</h3>
+      <h6 style="color:#FFF"><img class="edimg" src="wetsern.png"/>Western Washington University</h6>
+      <p style="color:#FFF; font-size: 12px">Bachelor's of Science in Computer Science
+      <br />Expected Graduation Date: Fall 2016
+      <br />Current GPA: 3.74</p>
+      <h6 style="color:#FFF"><img class="edimg" src="jaguars.png"/> Emerald Ridge High School</h6>
+      <p style="color:#FFF; font-size: 12px">High School Diploma
+      <br />Graduation Date: June 2013
+      <br />GPA: 3.93</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 col-sm-6 col-xs-6 about2">
+      <h4 class="title text-center">Interests</h3>
+    </div>
+    <div class="col-md-6 col-sm-6 col-xs-6 about1">
+      <h4 class="title text-center">Technologies</h3>
+    </div>
+
+  </div>
+</div>
+
+<div class="home">
+  <a name="posts"></a>
+  <div class="page-header">
+    <h1>Posts</h1>
+  </div>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
