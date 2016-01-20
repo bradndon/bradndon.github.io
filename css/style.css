@@ -1,5 +1,5 @@
 .jumbotron {
-  background-color: #CECECE;
+  background-color: #f1eaea;
 }
 .footer {
   background: #348889;
@@ -29,9 +29,13 @@
   margin-bottom: 10px;
 }
 body {
-  background-color: #CECECE;
+  background-color: #f1eaea;
   padding-top: 70px;
 }
+.btn-primary:visited {
+  color: white
+}
+
 .btn-primary {
   color: #fff;
   background-color: #4CBF99;
