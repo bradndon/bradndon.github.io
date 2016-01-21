@@ -44,13 +44,13 @@ some of the capabilities that they have. To start, head over to the
 [VirtualBox website][virtualbox] and follow the steps to install VirtualBox on
 your operating system. Once you get it up and running, go ahead and type `ctrl+N`
 to create a new virtual machine. This will bring up this screen:
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Image of Yaktocat](/virtual1.png)
 As you can see, I decided to name mine `My Shiny New Virtual Machine` and I
 decided to make it run Ubuntu since I am already running Windows. On the next few
 pages, just use the recommended settings for now, you can play around with the
 amount of memory and hard drive size another time. Once you have gone through
 those steps, you will see your new virtual machine in the list of machines like so:
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![Image of Yaktocat](/virtual2.png)
 You can now double click the machine and it will boot it up for you. You will
 see that it cannot boot up. The problem is that we do not have the image of the
 computer preinstalled on our machine. To fix this, head over [here][ubuntu] and
