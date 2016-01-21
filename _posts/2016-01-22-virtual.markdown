@@ -31,6 +31,43 @@ server without having to pay for one. Because a server you would rent from
 someone like [Digital Ocean][digitalocean] or [AWS][aws] would be a base
 operating system that you must set up yourself securely. A virtual machine is a
 free way to practice this process so that when you are paying for a server, you
-will not need to waste any time learning how to set it up.  
+will not need to waste any time learning how to set it up.
+
+One final use that we will talk more in depth next week about is being able for
+you to collaborate with a group and all be developing in an environment that
+works for all the members. It makes it significantly easy to collaborate across
+operating systems when you can all develop in the same environment.
+
+# A VirtualBox Initiation
+We are now going to play around with creating a virtual machine and show off
+some of the capabilities that they have. To start, head over to the
+[VirtualBox website][virtualbox] and follow the steps to install VirtualBox on
+your operating system. Once you get it up and running, go ahead and type `ctrl+N`
+to create a new virtual machine. This will bring up this screen:
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+As you can see, I decided to name mine `My Shiny New Virtual Machine` and I
+decided to make it run Ubuntu since I am already running Windows. On the next few
+pages, just use the recommended settings for now, you can play around with the
+amount of memory and hard drive size another time. Once you have gone through
+those steps, you will see your new virtual machine in the list of machines like so:
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+You can now double click the machine and it will boot it up for you. You will
+see that it cannot boot up. The problem is that we do not have the image of the
+computer preinstalled on our machine. To fix this, head over [here][ubuntu] and
+download the desktop image you would like to use. Then click the Settings button
+and under storage click the button that looks like a CD and select the .iso file
+you just downloaded. Now when you boot it up it will boot up Ubuntu as intended.
+
+Now you can use this virtual machine just like a Linux machine. Depending on the
+virtual machine you create, your cursor may be captured by the machine. This
+means that the VM will have control and you will not be able to use your mouse
+on your normal operating system anymore. In order to fix this, you just have to
+press the button that appears in the bottom right of the virtual machine, in my
+case it was `Right Ctrl`. Now you can create more virtual machines and play
+around with different operating systems. It can help testing code that needs to
+be portable significantly easier.
 
 [virtualbox]: https://www.virtualbox.org/wiki/Downloads
+[digitalocean]: https://www.digitalocean.com/
+[aws]: https://aws.amazon.com
+[ubuntu]: http://releases.ubuntu.com/trusty/
