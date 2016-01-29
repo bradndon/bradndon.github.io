@@ -1,0 +1,57 @@
+---
+layout: post
+title: Vagrant, An easier way to use VM's
+date: 2016-01-29T12:30:20.000Z
+categories: 491 Development
+---
+#Introduction
+Last week, I talked about the importance and usefulness of virtual machines.
+They are helpful in many situations. You may be thinking however "Brandon, you
+said we would be talking about collaborative tools, but virtual machines seem
+like they would only be useful personally." Do not worry, that is what this post
+is all about! We are going to look at a tool that can be used to easily have the
+same virtual machine running on everyone in your groups machines and that tool
+is [Vagrant][vagrant]. From their website, Vagrant is a tool that is used to
+"Create and configure lightweight, reproducible, and portable development
+environments." While I feel like every tool that is out there claims to be
+"lightweight" and "easy", Vagrant actually feels that way. Let's get started
+with the basics.
+
+#Installing
+Installing Vagrant is as simple as it gets, head over [here][download], and
+download it for your operating system. (Note: You may also need to download
+[VirtualBox VM][virtualbox].) Once it finishes, go ahead and open up a
+console instance and head to an empty directory. Then type the commands:
+{% highlight bash %}
+vagrant init ubuntu/trusty64
+vagrant up
+{% endhighlight %}
+That is all it takes, and once it installs the operating system, we have the same
+outcome as the end of my last post. Based alone on how it takes two lines to get
+a complete virtual machine up and running is amazing. In addition, if you want
+to take a look at all the different machines you can create, check [here][boxes].
+
+#What's Next?
+Now we have a virtual machine running, how can we access it? Before, we could
+easily use the machine since it had a GUI. Vagrant on the other runs from the
+command prompt. In order to access it, simply type:
+{% highlight bash %}
+vagrant ssh
+{% endhighlight %}
+Now we are on a command prompt in our virtual machine! At this point you are
+probably wondering what gain this has over a normal VM. In order to see this
+head over to the `/vagrant` folder and list the contents of it
+{% highlight bash %}
+vagrant ssh
+ls
+{% endhighlight %}
+What you will see, is a file named Vagrantfile. In the directory you ran
+`vagrant init`, you will also see a file named Vagrantfile. What Vagrant does
+when you create a machine, is it mirrors the directory you make the VM in. This
+makes it so that as you edit files on your machine, they are automatically
+updated on the virtual machine.
+
+[vagrant]:https://vagrantup.com
+[download]:https://www.vagrantup.com/downloads.html
+[virtualbox]:https://www.virtualbox.org/wiki/Downloads
+[boxes]:https://atlas.hashicorp.com/boxes/search
