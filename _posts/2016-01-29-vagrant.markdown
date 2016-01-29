@@ -1,27 +1,27 @@
 ---
 layout: post
-title: Vagrant, An easier way to use VM's
+title: Vagrant, an easier way to use VMs
 date: 2016-01-29T12:30:20.000Z
 categories: 491 Development
 ---
 #Introduction
 Last week, I talked about the importance and usefulness of virtual machines.
-They are helpful in many situations. You may be thinking however "Brandon, you
+They are helpful in many situations. However, you may be thinking, "Brandon, you
 said we would be talking about collaborative tools, but virtual machines seem
 like they would only be useful personally." Do not worry, that is what this post
 is all about! We are going to look at a tool that can be used to easily have the
 same virtual machine running on everyone in your groups machines and that tool
 is [Vagrant][vagrant]. From their website, Vagrant is a tool that is used to
 "Create and configure lightweight, reproducible, and portable development
-environments." While I feel like every tool that is out there claims to be
+environments." While I feel like every tool out there claims to be
 "lightweight" and "easy", Vagrant actually feels that way. Let's get started
 with the basics.
 
 #Installing
-Installing Vagrant is as simple as it gets, head over [here][download], and
+Installing Vagrant is as simple as it gets, [click here][download], and
 download it for your operating system. (Note: You may also need to download
 [VirtualBox VM][virtualbox].) Once it finishes, go ahead and open up a
-console instance and head to an empty directory. Then type the commands:
+console instance and create an empty directory. Then type the commands:
 {% highlight bash %}
 vagrant init ubuntu/trusty64
 vagrant up
@@ -39,17 +39,58 @@ command prompt. In order to access it, simply type:
 vagrant ssh
 {% endhighlight %}
 Now we are on a command prompt in our virtual machine! At this point you are
-probably wondering what gain this has over a normal VM. In order to see this
+probably wondering what gain this has over a normal VM. In order to see this,
 head over to the `/vagrant` folder and list the contents of it
 {% highlight bash %}
-vagrant ssh
+cd /vagrant
 ls
 {% endhighlight %}
 What you will see, is a file named Vagrantfile. In the directory you ran
 `vagrant init`, you will also see a file named Vagrantfile. What Vagrant does
 when you create a machine, is it mirrors the directory you make the VM in. This
 makes it so that as you edit files on your machine, they are automatically
-updated on the virtual machine.
+updated on the virtual machine. There is no need to use FTP or even copy and
+paste to get your files to your virtual machine. Vagrant takes care of it for
+you. One example of this being very helpful is with running python scripts. You
+can easily write them on a Windows machine, which is usually difficult to get
+certain Python libraries to work on, but run them on a Linux machine.
+
+#Collaborative Uses
+The uses for this tool collaboratively are endless. One way it is helpful is to
+keep your Vagrantfile under source control so that everyone has the same virtual
+machine. Another important idea with Vagrant is provisioning. This means that
+when you create a Vagrant VM, it can be told to run a certain script. From the
+Vagrant website, this script will install an Apache web server and tell it to
+use the `/vagrant` folder instead of `/var/www/`, add these lines to your
+Vagrantfile, under the line `config.vm.box = "ubuntu/trusty32"`:
+{% highlight bash %}
+config.vm.provision "shell", inline: <<-SHELL
+
+apt-get update
+apt-get install -y apache2
+if ! [ -L /var/www ]; then
+  rm -rf /var/www
+  ln -fs /vagrant /var/www
+fi
+
+SHELL
+config.vm.network :forwarded_port, guest: 80, host: 4567
+{% endhighlight %}
+Now go back to your command line and say:
+{% highlight bash %}
+vagrant provision
+{% endhighlight %}
+Once it finishes, if you put an HTML file in the current directory, and point
+your browser to [localhost:4567](http://localhost:4567), Apache will properly
+load up your file. Creating scripts like this can bring everyone on your team
+up to speed with your virtual machine.
+
+#Conclusion
+I hope by now, you can successfully set up a Vagrant VM and have an understanding
+of how they can be extremely helpful in a team setting. If the words "source
+control" up above confused you, make sure to continue to read my blog, because
+starting next week we will be looking at the basics of source control. I
+consider this to be the greatest collaboration tool of all.
 
 [vagrant]:https://vagrantup.com
 [download]:https://www.vagrantup.com/downloads.html
