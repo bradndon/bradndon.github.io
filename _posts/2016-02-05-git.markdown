@@ -1,0 +1,93 @@
+---
+layout: post
+title: Source Control is a Necessity!
+date: 2016-02-05T12:30:20.000Z
+categories: 491 Development
+---
+#Introduction
+Last week, I mentioned the term "source control". While most students have heard
+the term, not all of them have seen the benefits of using source control. That
+is what we are going to look at this week. Specifically we are going to look
+at [git][git]. While there are other source control softwares such as [SVN][svn]
+and [Mercurial][hg], git is used very often and one of the largest online code
+repository websites [Github](https://github.com) uses it exclusively. I also have
+the most experience with Git so I will be able to give better explanations of
+the things I am discussing.
+
+#What is source control?
+Source control, or version control,
+[is a system that records changes to a file or set of files][scdef]. This means
+that as you change files, you can track what you have done as well as go back to
+previous versions. If you accidentally overwrite your file using `gcc -o`, you can
+get your file back. If you want to add some features to your project but you
+want to be able to go back to how it was, you can create a copy of the code and
+edit that one using a thing called "branches". Overall, all of these things make
+it seem obvious that source control is a must.
+
+#Getting Started
+To get started, head over to the [downloads][down] page on the git website and
+install git for your operating system. Once it is finished, you are ready to go!
+For this post, we are going to make a simple project to show off some of the
+features git has to offer. To start, go into an empty directory and simply type:
+{% highlight bash %}
+git init
+{% endhighlight %}
+What this will do will create a folder called `.git` that will track all the
+changes you make to your project. Now create a file named `contributors.txt` and
+put your name in it, as you are the one contributing to this project. Now if you
+run the command `git status` it will tell you your file is untracked! That's not
+what we want, we want to track our files. To start tracking it simply type
+{% highlight bash %}
+git add contributors.txt
+{% endhighlight %}
+Now run `git status` again and see that it tells you that
+those changes are going to be committed. Committing is the process of making a
+new point that you could travel back to if you changed something you did not
+want to in your code base. It also gives us a way of leaving a message about
+what changed in our project. To make a commit simply type:
+{% highlight bash %}
+git commit -m "Initial commit. Add contributors file"
+{% endhighlight %}
+The `-m` flag tells git that you want to leave a message with that commit. It is
+smart to leave meaningful messages so that as time goes on you can tell what you
+did to your code. This is also helpful when you start sharing a project with
+other people. For example, at my work we have a project where someone made the
+commit message "Ugh." This is useless to me because I do not know what they
+changed at all. It may not seem important and that you will always be mad at
+your past self if you make meaningless commit messages.
+
+#Getting fancy
+The next feature of source control I wanted to show off is branching. Let's say
+with our sample project, we want to add a file that has the license for our
+project. Instead of just adding it to the code base, we are going to make a
+branch that will contain it. It's as easy as typing:
+{% highlight bash %}
+git branch license
+git checkout license
+{% endhighlight %}
+This will make a branch and then switch you over to that branch. Now any commits
+you make will be on this branch instead of the master one. Now create your file
+`license.txt` and commit it to your code base. The problem we now have is that
+our license file is on a separate branch from the main code. In order to fix that
+we will type:
+{% highlight bash %}
+git checkout master
+git merge license
+{% endhighlight %}
+What this does is add the changes you made on the license branch and put them
+into the master branch. Now we have create a branch made changes and merged them
+back into the master branch.
+
+#Conclusion
+Source control is a concept that you will see everywhere in the professional
+world, but we are not given an extensive knowledge of it in our schooling. I
+hope that this post has gotten you interested in the idea of git and you will
+try it out some more. If you would like another resource to help you learn, I
+found that [this][git_tutorial] website was extremely helpful.
+
+[git]: https://git-scm.com/
+[down]: https://git-scm.com/downloads
+[svn]: https://subversion.apache.org/
+[hg]: https://www.mercurial-scm.org/
+[scdef]: https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control
+[git_tutorial]: https://try.github.io/levels/1/challenges/1
