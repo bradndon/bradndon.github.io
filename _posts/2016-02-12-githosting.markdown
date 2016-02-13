@@ -16,7 +16,7 @@ will still lose all your code. We are going to look at three different options
 to host your git projects: [Github][github], [BitBucket][bitbucket], and
 [GitLab][gitlab].
 
-1. Github
+Github
 =========
 The first hosting site we are going to look at is Github. Of these three, Github
 is the most well known for its large collection of open source projects. One of
@@ -28,7 +28,7 @@ platform for having many collaborators on a project. One major problem that
 people have with Github is that there is not an easy way to handle the issues
 that users have opened on a project. You can read more about that [here][deargh].
 
-2. BitBucket
+BitBucket
 ============
 Another popular hosting site is Atlassian's Bitbucket. One major advantage over
 Github is that it has free hosting for private repositories for teams five
@@ -40,7 +40,7 @@ item I enjoy about BitBucket is its easy integration with Atlassian's other
 products JIRA and Confluence. These products are also good so being able to use
 them with BitBucket can be advantageous to those already using them.
 
-3. GitLab
+GitLab
 =========
 The final hosting site we will look at today is GitLab. This one is the most
 generous with its pricing, as the community edition gets you unlimited free
