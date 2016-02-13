@@ -4,7 +4,8 @@ title: Git Hosting, an Easy way to Collaborate with Git
 date: 2016-02-05T12:30:20.000Z
 categories: 491 Development
 ---
-#Introduction
+Introduction
+============
 Last week we talked about the basics of using git as a source control system.
 Now we will look at ways to keep your code that is under source control located
 in a centralized place instead of on your machine. The reason we would want this
@@ -15,7 +16,8 @@ will still lose all your code. We are going to look at three different options
 to host your git projects: [Github][github], [BitBucket][bitbucket], and
 [GitLab][gitlab].
 
-#1. Github
+1. Github
+=========
 The first hosting site we are going to look at is Github. Of these three, Github
 is the most well known for its large collection of open source projects. One of
 the main reasons for this is that it is free to use for open source projects.
@@ -26,7 +28,8 @@ platform for having many collaborators on a project. One major problem that
 people have with Github is that there is not an easy way to handle the issues
 that users have opened on a project. You can read more about that [here][deargh].
 
-#2. BitBucket
+2. BitBucket
+============
 Another popular hosting site is Atlassian's Bitbucket. One major advantage over
 Github is that it has free hosting for private repositories for teams five
 people and under. This can be extremely helpful for teams that can not make their
@@ -37,7 +40,8 @@ item I enjoy about BitBucket is its easy integration with Atlassian's other
 products JIRA and Confluence. These products are also good so being able to use
 them with BitBucket can be advantageous to those already using them.
 
-#3. GitLab
+3. GitLab
+=========
 The final hosting site we will look at today is GitLab. This one is the most
 generous with its pricing, as the community edition gets you unlimited free
 private and public repositories for you to work with. Another advantage GitLab
@@ -46,7 +50,8 @@ give it a little more flair and appeal. GitLab also keeps the source code for
 their community edition as and open source project, the only one of these three
 that has their hosting software source code available.
 
-#Conclusion
+Conclusion
+==========
 All three of these solutions are popular for different reasons. While choosing
 one may seem arbitrary, it will lead to you learning a lot about how to work
 with them. I hope that this post will help you find out which one is right for
