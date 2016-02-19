@@ -1,0 +1,71 @@
+---
+layout: post
+title: Project Management, Some tools to help stay organized
+date: 2016-02-19T12:30:20.000Z
+categories: 491 Development
+---
+Introduction
+============
+For my final post in this series, I thought we could take a step away from the
+code and talk about some tools that can help manage a project (especially ones
+with a team involved) as well as communicate effectively. The applications I
+will discuss are definitely not the only options, they are just the ones I am
+familiar with. The tools we will be looking at today are [Trello][trello] and
+[Slack][slack].
+
+Trello
+======
+At it's core, Trello is a way to organize your life. This tool could be useful
+for getting organized for yourself, or for you and your roommates, but today we
+will look at it in the context of being a project management tool. Trello works
+with these screens called "boards". You can think of them like a bulletin board.
+On these boards, you add lists that have titles such as "Features to Add" and
+then to these lists you can add cards for each feature you want to add in this
+case. The cards can hold a lot of information as you can add comments, documents,
+pictures, a checklist, and even a due date. Another list you may have is one
+named "Working on", which you would move things to when you are working on them.
+This way your team will know that you are working on something and what it is.
+Finally you could have a "Finished" list that contains all the finished features.
+In addition to this, each card can have tags associated with it so that you can
+know information about that card without having to read the description. Here is
+an example of Trello in action:
+![Image of Trello](/trello.png)
+As you can see we have an expanded number of lists than the three suggested
+above, but they follow the same pattern: things to add, things being worked on,
+and things that are finished. You can also see the advantages of using the tags
+because just from looking at the card "Move / Retrofit the Lost and Found App
+that's currently inside the VU site." I know that it is a high priority task, is
+for the development team (since we have developers and designers), and is for the
+VU site. All this information I can gather without needing to read anymore than
+the title and look at some colors. This tool is extremely helpful and useful to
+any team that needs to stay organized.
+
+Slack
+=====
+Slack is an application that has been gaining a lot of traction lately. It is
+marketed as "A messaging app for teams" and accomplishes what a basic messaging
+app can do as well as much more. With Slack you create different "channels" for
+different topics. These channels can be public, where anyone on your team can
+join or private, where the members must be invited. One situation I have seen
+the usefulness of this is in companies that do work for a lot of different
+individuals, the team invites that person to a slack channel about their project
+so that they can ask questions in a less official way than email. In addition
+to messaging, Slack can integrate with a lot of different services. For example,
+there is a channel on my Slack for work that just keeps updates on our source
+control repositories. This lets us know when anybody is adding new code to our
+code base as well as who is doing it. There are also integrations to keep track
+of your analytics, be alerted of events coming up, your Trello boards
+and even one to easily send random gifs to your team. Slack is becoming more and
+more of a mainstay application in workplaces so it can never hurt to start
+getting used to it now.
+
+Conclusion
+==========
+Trello and Slack are fantastic tools to help your team stay organized. Even for
+personal projects, keeping yourself on track with Trello can be very helpful. It
+really helps you see the end of the tunnel for your project. Slack can be a
+useful messaging tool for teams of any size that struggle to stay in touch and
+manage many different services.
+
+[slack]: https://slack.com
+[trello]: https://trello.com
