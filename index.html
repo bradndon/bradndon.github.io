@@ -2,91 +2,21 @@
 layout: default
 ---
 
-<div class="">
-  <div class="jumbotron">
-    <div class="container">
-    <h1>Hi, I'm Brandon!</h1>
-    <p>I am an aspiring web developer.</p>
-    <p><a class="btn btn-primary btn-lg" href="#about" role="button">Learn more</a></p>
+<div style="background-image: linear-gradient(-236deg, #614385 0%, #516395 100%);width:100%;height:200px;"></div>
+<div style="width:100%; float:left">
+  <div class="tile tile--small" style="float:left;background-color:blue;"><h2>PROJECTS</h2></div>
+  {% for project in site.data.projects %}
+    {% assign loopindex = forloop.index | modulo: 2 %}
+    {% if loopindex == 1 %}
+      {% assign float="right" %}
+    {% else %}
+      {% assign float="left" %}
+    {% endif %}
+    <div class="tile tile--big" style="float:{{float}};background: url('{{project.image}}')no-repeat;background-position:center;background-size:cover; background-color:{{project.color}};">
+      <div class="tile__overlay tile__overlay--{{float}}">
+
+      </div>
     </div>
-  </div>
-  <a name="projects"></a>
-
-  <div class="page-header">
-    <h1>Projects</h1>
-  </div>
-  <div class="row">
-    <div class="col-md-12 col-sm-12 pro1">
-      <h3 class="title text-center">WWU Classfinder iOS App</h3>
-      <img class="img-responsive center-block" src="classfinder.png"/>
-      <p class="descr">An app I made to help WWU students find classes. A complete redesign of the web version, making it easier and more appealing to the eye. It adds the functionality of seeing the Rate My Professors scores right in the app. You can also easily create schedules to see potential class schedules for a given quarter.</p>
-      <a class="btn btn-primary infoBtn" href="https://itunes.apple.com/us/app/wwu-classfinder/id860241453?mt=8">See on App Store</a>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-12 col-sm-12 pro2">
-      <h3 class="title text-center">WPF Scavenger Hunt Creator</h3>
-      <img class="img-responsive center-block" src="wpfScavenger.png"/>
-
-      <p class="descr">A custom PDF template creator made for a local math teacher to help streamline some of the work that goes into her daily activities. You can specify images for each problem and solution and select options for creation.</p>
-      <a class="btn btn-primary infoBtn" href="https://github.com/bradndon/Scavenger_Hunt">View Source Code</a>
-    </div>
-
-  </div>
-  <a name="about"></a>
-
-  <div class="page-header">
-    <h1>About Me</h1>
-  </div>
-  <div class="row">
-    <div class="col-md-6 col-sm-6 col-xs-6 about1">
-      <h4 class="title text-center">Work</h3>
-      <h6 style="color:#FFF"><img class="edimg" src="html.png"/>Viking Union Web Developer</h6>
-      <p style="color:#FFF; font-size: 12px">Western Washington University
-      <br />October 2015 -
-      <br />Develop and Maintain web based applications for Western Washington University's Viking Union and Associated Students.</p>
-    </div>
-    <div class="col-md-6 col-sm-6 col-xs-6  about2">
-      <h4 class="title text-center">Education</h3>
-      <h6 style="color:#FFF"><img class="edimg" src="wetsern.png"/>Western Washington University</h6>
-      <p style="color:#FFF; font-size: 12px">Bachelor's of Science in Computer Science
-      <br />Expected Graduation Date: Fall 2016
-      <br />Current GPA: 3.74</p>
-      <h6 style="color:#FFF"><img class="edimg" src="jaguars.png"/> Emerald Ridge High School</h6>
-      <p style="color:#FFF; font-size: 12px">High School Diploma
-      <br />Graduation Date: June 2013
-      <br />GPA: 3.93</p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-6 col-sm-6 col-xs-6 about2">
-      <h4 class="title text-center">Interests</h3>
-    </div>
-    <div class="col-md-6 col-sm-6 col-xs-6 about1">
-      <h4 class="title text-center">Technologies</h3>
-    </div>
-
-  </div>
-</div>
-
-<div class="home">
-  <a name="posts"></a>
-  <div class="page-header">
-    <h1>Posts</h1>
-  </div>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  {% endfor %}
 
 </div>
