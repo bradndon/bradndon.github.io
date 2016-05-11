@@ -2,6 +2,7 @@
 layout: post
 title: Project Management, Some tools to help stay organized
 date: 2016-02-19T12:30:20.000Z
+color: 8D6E63
 categories: 491 Development
 ---
 Introduction

@@ -1,33 +1,127 @@
-
+* {
+  box-sizing: border-box;
+}
 body {
-  background-color: #f1eaea;
+  background-color: #303030;
+}
+header {
+  background-image: linear-gradient(-236deg, #614385 0%, #516395 100%);
+  width:100%;
+  height:170px;
+  transition: all .4s ease;
+  position: fixed;
+  overflow: hidden;
+}
+.tile__overlay a {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  background-color: transparent;
+  border: 2px solid #303030;
+  color: #303030;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: all .4s ease;
+  border-radius: 30px;
+  float:left;
+  margin: 0px 20px;
+}
+a:hover {
+  text-decoration: none;
+  background-color: #303030;
+  color:#f9f9f9 !important;
+}
+a:visited {
+  color: inherit;
+}
+.header__h1 {
+  font-size: 5.7rem;
+  font-weight: bold;
+  text-align: center;
+  color:#f9f9f9;
+  transition: font-size .4s ease;
+}
+.header__p {
+  font-size: 3.5rem;
+  text-align: center;
+  color: #f9f9f9;
+  opacity: 1;
+  transition: opacity .4s ease;
+}
+.sticky {
+  height:65px;
+  z-index: 1000;
+}
+.sticky .header__h1 {
+  font-size: 3.8rem;
+}
+.sticky .header__p {
+  opacity: 0;
 }
 .tile {
   width:50%;
 }
+
 .tile--big {
-  height:600px;
 }
 .tile--small {
   height:200px;
+  padding:25px;
+}
+.tile__shcontainer {
   display:flex;
   justify-content: center;
   align-items: center;
+  width:100%;
+  height:100%;
+  border:2px solid #592A92;
+}
+.tile__header {
+  font-size: 5.7rem;
+  color:#f9f9f9;
+  font-weight: bold;
 }
 .tile__overlay {
   opacity: 0;
   width:100%;
   height:100%;
-  background-color: rgba(210,210,210,.7);
+  padding:25px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: rgba(240,240,240,.9);
   transition: opacity .3s;
 }
-
-.tile__overlay--right {
-  opacity: 0;
-  width:100%;
-  height:100%;
-  background-color: rgba(30,30,30,.7);
+.tile__overlay p {
+  font-size: 1.8rem;
+  text-align: center;
 }
 .tile--big:hover .tile__overlay {
   opacity: 1;
+}
+
+.overlay__title {
+  text-align: center;
+  font-size: 5.0rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color:#191919;
+}
+@media only screen and (max-width: 880px) {
+  .tile {
+    width:100%;
+  }
+}
+@media only screen and (max-width: 880px) {
+  .tile {
+    width:100%;
+  }
+}
+
+@media only screen and (max-device-width: 768px) {
+  .tile__overlay {
+    opacity: 1;
+  }
+
 }

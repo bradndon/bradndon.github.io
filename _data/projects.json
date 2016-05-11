@@ -1,2 +1,42 @@
-[{name: "Pomodoro Timer", color: "aqua", image: "images/tomato.png"},
-  {name: "iOS WWU Classfinder", color: "red", image: "images/classfinder.png"}]
+[{
+    name: "Pomodoro Timer",
+    color: "aqua",
+    image: "images/tomato.png",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nibh augue, suscipit eget ante vitae, blandit molestie justo. Cras ac sollicitudin mi, quis blandit ipsum. Vivamus a massa ac tellus elementum dignissim a nec nisl. Nulla vel blandit felis. Pellentesque consequat purus dui, at venenatis erat elementum a. In a orci vitae ipsum pellentesque molestie. Mauris nec lectus sed massa.",
+    buttons: [{
+      title: "View Site",
+      link: "https://bradndon.github.io/Pomodoro",
+      }, {
+      title: "View Code",
+      link: "https://github.com/bradndon/Pomodoro",
+      }]
+}, {
+    name: "Real Sports Pearls",
+    color: "aqua",
+    image: "images/rsp.jpg",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nibh augue, suscipit eget ante vitae, blandit molestie justo. Cras ac sollicitudin mi, quis blandit ipsum. Vivamus a massa ac tellus elementum dignissim a nec nisl. Nulla vel blandit felis. Pellentesque consequat purus dui, at venenatis erat elementum a. In a orci vitae ipsum pellentesque molestie. Mauris nec lectus sed massa.",
+    buttons: [{
+      title: "View Site",
+      link: "http://realsportspearls.com",
+      }, {
+      title: "View Code",
+      link: "https://github.com/bradndon/realsportspearls",
+      }]
+}, {
+    name: "iOS WWU Classfinder",
+    color: "red",
+    image: "images/classfinder.png",
+    desc: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis sed fermentum sapien. Nullam eget nibh pharetra, commodo mi eget, sagittis tortor. Nullam pulvinar sed justo in vestibulum. Fusce facilisis, odio vitae maximus molestie, leo arcu viverra leo, quis rutrum ligula justo eget diam. Aenean sed nulla in dui eleifend congue. Nulla tempus pellentesque bibendum. Donec.",
+    buttons: [{
+      title: "View in App Store",
+      link: "https://itunes.apple.com/us/app/wwu-classfinder/id860241453?ls=1&mt=8",
+      }]
+}, {
+    name: "WPF Scavenger Hunt Creator",
+    color: "rgb(216,93,51)",
+    desc: "Proin pharetra condimentum faucibus. Fusce vulputate tortor vitae dignissim tempus. Etiam pulvinar varius sapien, ornare rutrum orci consequat non. Donec ornare urna non laoreet ultricies. Quisque lectus augue, rhoncus a ex at, suscipit dictum est. Vestibulum placerat fringilla ex id consequat. Maecenas vestibulum gravida nunc, eu dignissim massa auctor eget. Aenean consectetur in purus vitae congue. Quisque congue vitae ex.",
+    buttons: [{
+      title: "View Code",
+      link: "https://github.com/bradndon/Scavenger_Hunt",
+      }]
+}]

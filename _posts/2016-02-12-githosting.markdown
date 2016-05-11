@@ -2,6 +2,7 @@
 layout: post
 title: Git Hosting, an Easy way to Collaborate with Git
 date: 2016-02-12T12:30:20.000Z
+color: D4E157
 categories: 491 Development
 ---
 Introduction

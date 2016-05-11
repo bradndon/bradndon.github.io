@@ -1,22 +1,109 @@
 ---
 layout: default
 ---
-
-<div style="background-image: linear-gradient(-236deg, #614385 0%, #516395 100%);width:100%;height:200px;"></div>
+<div>
+<header>
+  <!-- <p id="projects" style="display: none;float:left;">Projects By</p> -->
+  <h1 class="header__h1">Brandon Fox</h1>
+  <p class="header__p">Blah Blah Blah Blah Blah Blah</p>
+</header>
 <div style="width:100%; float:left">
-  <div class="tile tile--small" style="float:left;background-color:blue;"><h2>PROJECTS</h2></div>
+  {% assign boop = true %}
+  {% if boop %}
+    {% assign boop = false %}
+    {% assign float="left" %}
+  {% else %}
+    {% assign boop = true %}
+    {% assign float="right" %}
+  {% endif %}
+  <div id="filler" style="clear:both;height:170px;transition: all .4s ease;"></div>
+
+  <div class="tile tile--small" style="float:{{float}};background: #000000;background: -webkit-linear-gradient(to left, #101010 , #434343);background: linear-gradient(315deg, #191919 , #303030);">
+    <div class="tile__shcontainer">
+      <h2 class="tile__header">PROJECTS</h2>
+    </div>
+  </div>
+
   {% for project in site.data.projects %}
-    {% assign loopindex = forloop.index | modulo: 2 %}
-    {% if loopindex == 1 %}
-      {% assign float="right" %}
-    {% else %}
+    {% if boop %}
+      {% assign boop = false %}
       {% assign float="left" %}
+    {% else %}
+      {% assign boop = true %}
+      {% assign float="right" %}
     {% endif %}
     <div class="tile tile--big" style="float:{{float}};background: url('{{project.image}}')no-repeat;background-position:center;background-size:cover; background-color:{{project.color}};">
-      <div class="tile__overlay tile__overlay--{{float}}">
-
+      <div class="tile__overlay">
+        <h3 class="overlay__title">{{ project.name}}</h3>
+        <p>{{ project.desc }}</p>
+        <div>
+        {% for button in project.buttons %}
+        <a target="_blank" href="{{button.link}}">{{button.title}}</a>
+        {% endfor %}
+      </div>
       </div>
     </div>
-  {% endfor %}
 
+  {% endfor %}
+  {% if boop %}
+    {% assign boop = false %}
+    {% assign float="left" %}
+  {% else %}
+    {% assign boop = true %}
+    {% assign float="right" %}
+  {% endif %}
+  <div class="tile tile--small" style="float:{{float}};background: #000000;background: -webkit-linear-gradient(to left, #101010 , #434343);background: linear-gradient(315deg, #191919 , #303030);">
+    <div class="tile__shcontainer">
+      <h2 class="tile__header">BLOG POSTS</h2>
+    </div>
+  </div>
+  {% for post in site.posts %}
+
+    <div class="tile tile--big" style="float:{{float}};background-color:#{{post.color}};">
+      <div class="tile__overlay">
+        <h3 class="overlay__title">{{ post.title}}</h3>
+        {{ post.excerpt }}
+      </div>
+    </div>
+    {% if boop %}
+      {% assign boop = false %}
+      {% assign float="left" %}
+    {% else %}
+      {% assign boop = true %}
+      {% assign float="right" %}
+    {% endif %}
+  {% endfor %}
+<script>
+var boop = 0
+$(window).scroll(function() {
+  console.log($(this).scrollTop());
+  if ($(this).scrollTop() > 1){
+    $('header').addClass("sticky");
+    $('#filler').css("transition", "transition:height .4s ease");
+    $('#filler').css("height", "65px");
+  } else{
+    $('header').removeClass("sticky");
+    $('#filler').css("height", "170px");
+  }
+  if ($(this).scrollTop() > 622 && boop != 2) {
+    boop = 2;
+    $('.header__h1').fadeOut(300, function() {
+      $(this).text('Brandon Fox\'s Blog').fadeIn(300);
+    });
+  } else if ($(this).scrollTop() > 75 && $(this).scrollTop() <= 622 && boop != 1){
+    boop = 1;
+    console.log("CALLING");
+    $('.header__h1').fadeOut(300, function() {
+        $(this).text('Projects By Brandon Fox').fadeIn(300);
+    });
+  } else if ($(this).scrollTop() <= 75 && boop != 0) {
+    boop = 0;
+    $('.header__h1').fadeOut(300, function() {
+      $(this).text('Brandon Fox').fadeIn(300);
+
+    });
+  }
+});
+</script>
+</div>
 </div>
