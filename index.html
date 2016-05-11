@@ -63,8 +63,10 @@ layout: default
 
     <div class="tile tile--big" style="float:{{float}};background-color:#{{post.color}};">
       <div class="tile__overlay">
-        <h3 class="overlay__title">{{ post.title}}</h3>
-        {{ post.excerpt }}
+        <div>
+          <h3 class="overlay__title">{{ post.title}}</h3>
+          {{ post.excerpt }}
+        </div>
       </div>
     </div>
     {% if boop %}
