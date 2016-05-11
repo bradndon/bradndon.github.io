@@ -34,13 +34,15 @@ layout: default
     {% endif %}
     <div class="tile tile--big" style="float:{{float}};background: url('{{project.image}}')no-repeat;background-position:center;background-size:cover; background-color:{{project.color}};">
       <div class="tile__overlay">
-        <h3 class="overlay__title">{{ project.name}}</h3>
-        <p>{{ project.desc }}</p>
         <div>
-        {% for button in project.buttons %}
-        <a target="_blank" href="{{button.link}}">{{button.title}}</a>
-        {% endfor %}
-      </div>
+          <h3 class="overlay__title">{{ project.name}}</h3>
+          <p>{{ project.desc }}</p>
+          <div>
+            {% for button in project.buttons %}
+            <a target="_blank" href="{{button.link}}">{{button.title}}</a>
+            {% endfor %}
+          </div>
+        </div>
       </div>
     </div>
 
