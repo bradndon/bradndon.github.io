@@ -1,6 +1,6 @@
 [{
     name: "Pomodoro Timer",
-    color: "aqua",
+    color: "#303030",
     image: "images/tomato.png",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nibh augue, suscipit eget ante vitae, blandit molestie justo. Cras ac sollicitudin mi, quis blandit ipsum. Vivamus a massa ac tellus elementum dignissim a nec nisl. Nulla vel blandit felis. Pellentesque consequat purus dui, at venenatis erat elementum a. In a orci vitae ipsum pellentesque molestie. Mauris nec lectus sed massa.",
     buttons: [{
@@ -9,34 +9,71 @@
       }, {
       title: "View Code",
       link: "https://github.com/bradndon/Pomodoro",
-      }]
+      }],
+    tools: [
+      {img: "react", alt: "Facebook React"},
+      {img: "html", alt: "HTML5"},
+      {img: "sass", alt: "SASS"}
+    ],
 }, {
     name: "Real Sports Pearls",
-    color: "aqua",
+    color: "rgb(40,62,71)",
     image: "images/rsp.jpg",
+    desc: "A complete redesign of the website for Real Sports Pearls, giving the user a way to visualize the necklace they are going to buy before purchasing. Leveraging responsive design techniques, the website is now accessible on any device.",
+    buttons: [
+      {
+        title: "View Site",
+        link: "http://realsportspearls.com",
+      }, {
+        title: "View Code",
+        link: "https://github.com/bradndon/realsportspearls",
+      }
+    ],
+    tools: [
+      {img: "angular", alt: "AngularJS"},
+      {img: "html", alt: "HTML5"},
+      {img: "css", alt: "CSS3"}
+    ],
+}, {
+    name: "Elevator Simulation",
+    color: "#f9f9f9",
+    image: "",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nibh augue, suscipit eget ante vitae, blandit molestie justo. Cras ac sollicitudin mi, quis blandit ipsum. Vivamus a massa ac tellus elementum dignissim a nec nisl. Nulla vel blandit felis. Pellentesque consequat purus dui, at venenatis erat elementum a. In a orci vitae ipsum pellentesque molestie. Mauris nec lectus sed massa.",
     buttons: [{
-      title: "View Site",
-      link: "http://realsportspearls.com",
-      }, {
       title: "View Code",
-      link: "https://github.com/bradndon/realsportspearls",
-      }]
+      link: "https://github.com/bradndon/Math_Simulations",
+      }],
+    tools: [
+      {img: "d3", alt: "D3.js"},
+      {img: "html", alt: "HTML5"},
+      {img: "css", alt: "CSS3"}
+    ],
 }, {
     name: "iOS WWU Classfinder",
-    color: "red",
+    color: "rgb(73,172,240)",
     image: "images/classfinder.png",
-    desc: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis sed fermentum sapien. Nullam eget nibh pharetra, commodo mi eget, sagittis tortor. Nullam pulvinar sed justo in vestibulum. Fusce facilisis, odio vitae maximus molestie, leo arcu viverra leo, quis rutrum ligula justo eget diam. Aenean sed nulla in dui eleifend congue. Nulla tempus pellentesque bibendum. Donec.",
+    desc: "Created out of frustration with the lack of responiveness the school's version had, the WWU Classfinder app has helped over 1500 students find classes. It integrates some much needed features on top of the existing pieces of the website: Easy schedule mockups, RateMyProfessor scores, and being able to find books needed for classes. Created using Objective-C to create finely tuned web scrapers written to deal with the poorly managed HTML.",
     buttons: [{
       title: "View in App Store",
       link: "https://itunes.apple.com/us/app/wwu-classfinder/id860241453?ls=1&mt=8",
-      }]
+      }
+    ],
+    tools: [
+      {img: "apple", alt: "iOS Programming"},
+      {img: "xcode", alt: "Objective-C with XCode"}
+    ],
 }, {
     name: "WPF Scavenger Hunt Creator",
     color: "rgb(216,93,51)",
-    desc: "Proin pharetra condimentum faucibus. Fusce vulputate tortor vitae dignissim tempus. Etiam pulvinar varius sapien, ornare rutrum orci consequat non. Donec ornare urna non laoreet ultricies. Quisque lectus augue, rhoncus a ex at, suscipit dictum est. Vestibulum placerat fringilla ex id consequat. Maecenas vestibulum gravida nunc, eu dignissim massa auctor eget. Aenean consectetur in purus vitae congue. Quisque congue vitae ex.",
+    desc: "A PDF template creator for a local math teacher to automate some of the work required to create activities for class. By specifying images for the questions and answers, the application will create a randomized PDF for Scavenger Hunts.",
     buttons: [{
       title: "View Code",
       link: "https://github.com/bradndon/Scavenger_Hunt",
-      }]
-}]
+      }
+    ],
+    tools: [
+      {img: "wpf", alt: "Windows Presentation Forms"},
+      {img: "csharp", alt: "C#"},
+      {img: "itext", alt: "iTextSharp for creating PDF's"},
+    ],
+},  ]

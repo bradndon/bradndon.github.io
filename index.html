@@ -37,11 +37,20 @@ layout: default
         <div>
           <h3 class="overlay__title">{{ project.name}}</h3>
           <p>{{ project.desc }}</p>
+          {% if project.tools %}
+            <h4 class="overlay__tools">Technologies Used</h4>
+            <div>
+              {% for tool in project.tools %}
+              <img style="width:64px; margin-bottom:15px;" alt={{tool.alt}} src="images/{{tool.img}}.png"/>
+              {% endfor %}
+            </div>
+          {% endif %}
           <div>
             {% for button in project.buttons %}
             <a target="_blank" href="{{button.link}}">{{button.title}}</a>
             {% endfor %}
           </div>
+
         </div>
       </div>
     </div>
@@ -79,6 +88,9 @@ layout: default
   {% endfor %}
 <script>
 var boop = 0
+$(function() {
+    $("img").lazyload();
+});
 $(window).scroll(function() {
   console.log($(this).scrollTop());
   if ($(this).scrollTop() > 1){
