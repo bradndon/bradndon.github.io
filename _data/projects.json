@@ -37,7 +37,7 @@
 }, {
     name: "Elevator Simulation",
     color: "#f9f9f9",
-    image: "",
+    image: "images/elevator.png",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nibh augue, suscipit eget ante vitae, blandit molestie justo. Cras ac sollicitudin mi, quis blandit ipsum. Vivamus a massa ac tellus elementum dignissim a nec nisl. Nulla vel blandit felis. Pellentesque consequat purus dui, at venenatis erat elementum a. In a orci vitae ipsum pellentesque molestie. Mauris nec lectus sed massa.",
     buttons: [{
       title: "View Code",
