@@ -6,7 +6,7 @@ color: 8D6E63
 categories: 491 Development
 ---
 Introduction
-============
+------------
 For my final post in this series, I thought we could take a step away from the
 code and talk about some tools that can help manage a project (especially ones
 with a team involved) as well as communicate effectively. The applications I
@@ -15,7 +15,7 @@ familiar with. The tools we will be looking at today are [Trello][trello] and
 [Slack][slack].
 
 Trello
-======
+------
 At it's core, Trello is a way to organize your life. This tool could be useful
 for getting organized for yourself, or for you and your roommates, but today we
 will look at it in the context of being a project management tool. Trello works
@@ -30,7 +30,7 @@ Finally you could have a "Finished" list that contains all the finished features
 In addition to this, each card can have tags associated with it so that you can
 know information about that card without having to read the description. Here is
 an example of Trello in action:
-![Image of Trello](/trello.png)
+![Image of Trello](/images/trello.png)
 As you can see we have an expanded number of lists than the three suggested
 above, but they follow the same pattern: things to add, things being worked on,
 and things that are finished. You can also see the advantages of using the tags
@@ -42,7 +42,7 @@ the title and look at some colors. This tool is extremely helpful and useful to
 any team that needs to stay organized.
 
 Slack
-=====
+-----
 Slack is an application that has been gaining a lot of traction lately. It is
 marketed as "A messaging app for teams" and accomplishes what a basic messaging
 app can do as well as much more. With Slack you create different "channels" for
@@ -61,7 +61,7 @@ more of a mainstay application in workplaces so it can never hurt to start
 getting used to it now.
 
 Conclusion
-==========
+----------
 Trello and Slack are fantastic tools to help your team stay organized. Even for
 personal projects, keeping yourself on track with Trello can be very helpful. It
 really helps you see the end of the tunnel for your project. Slack can be a

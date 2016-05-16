@@ -6,7 +6,7 @@ color: E91E63
 categories: 491 Development
 ---
 Introduction
-============
+------------
 Last week, I mentioned the term "source control". While most students have heard
 the term, not all of them have seen the benefits of using source control. That
 is what we are going to look at this week. Specifically we are going to look
@@ -17,7 +17,7 @@ the most experience with Git so I will be able to give better explanations of
 the things I am discussing.
 
 What is source control?
-=======================
+-----------------------
 Source control, or version control,
 [is a system that records changes to a file or set of files][scdef]. This means
 that as you change files, you can track what you have done as well as go back to
@@ -28,7 +28,7 @@ edit that one using a thing called "branches". Overall, all of these things make
 it seem obvious that source control is a must.
 
 Getting Started
-===============
+---------------
 To get started, head over to the [downloads][down] page on the git website and
 install git for your operating system. Once it is finished, you are ready to go!
 For this post, we are going to make a simple project to show off some of the
@@ -61,7 +61,7 @@ changed at all. It may not seem important and that you will always be mad at
 your past self if you make meaningless commit messages.
 
 Getting fancy
-=============
+-------------
 The next feature of source control I wanted to show off is branching. Let's say
 with our sample project, we want to add a file that has the license for our
 project. Instead of just adding it to the code base, we are going to make a
@@ -84,7 +84,7 @@ into the master branch. Now we have create a branch made changes and merged them
 back into the master branch.
 
 Conclusion
-==========
+----------
 Source control is a concept that you will see everywhere in the professional
 world, but we are not given an extensive knowledge of it in our schooling. I
 hope that this post has gotten you interested in the idea of git and you will

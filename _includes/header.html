@@ -1,21 +1,26 @@
-<!--
-  <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="navbar-header">
-    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav" aria-expanded="false">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <a class="navbar-brand" href="/"><img id="headshot" src="/brandon_headshot.jpg"/></a>
 
-  </div>
-  <div class="collapse navbar-collapse" id="nav">
-    <ul class="nav navbar-nav">
-        <li><a href="/#projects">Projects</a></li>
-        <li><a href="/#about">About Me</a></li>
-        <li><a href="/#posts">Posts</a></li>
-    </ul>
-  </div>
+<div>
 
-</nav> -->
+  <header>
+    <a href="{{ site.url }}" class="header__h1">Brandon Fox</a>
+    <p class="header__p">
+      {% if page.title %}
+        {{page.title}}
+      {% else %}
+        Lead Devloper at <a href="http://www.secondsyllable.com">Second Syllable Design Co.</a>
+      {% endif %}</p>
+  </header>
+<script>
+var boop = 0
+
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 1){
+    $('header').addClass("sticky");
+    $('#filler').css("transition", "transition:height .4s ease");
+    $('#filler').css("height", "65px");
+  } else{
+    $('header').removeClass("sticky");
+    $('#filler').css("height", "170px");
+  }
+});
+</script>

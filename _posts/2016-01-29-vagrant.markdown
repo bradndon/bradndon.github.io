@@ -6,7 +6,7 @@ color: 673AB7
 categories: 491 Development
 ---
 Introduction
-============
+------------
 Last week, I talked about the importance and usefulness of virtual machines.
 They are helpful in many situations. However, you may be thinking, "Brandon, you
 said we would be talking about collaborative tools, but virtual machines seem
@@ -20,7 +20,7 @@ environments." While I feel like every tool out there claims to be
 with the basics.
 
 Installing
-==========
+----------
 Installing Vagrant is as simple as it gets, [click here][download], and
 download it for your operating system. (Note: You may also need to download
 [VirtualBox VM][virtualbox].) Once it finishes, go ahead and open up a
@@ -35,7 +35,7 @@ a complete virtual machine up and running is amazing. In addition, if you want
 to take a look at all the different machines you can create, check [here][boxes].
 
 What's Next?
-============
+------------
 Now we have a virtual machine running, how can we access it? Before, we could
 easily use the machine since it had a GUI. Vagrant on the other runs from the
 command prompt. In order to access it, simply type:
@@ -60,14 +60,14 @@ can easily write them on a Windows machine, which is usually difficult to get
 certain Python libraries to work on, but run them on a Linux machine.
 
 Collaborative Uses
-==================
+------------------
 The uses for this tool collaboratively are endless. One way it is helpful is to
 keep your Vagrantfile under source control so that everyone has the same virtual
 machine. Another important idea with Vagrant is provisioning. This means that
 when you create a Vagrant VM, it can be told to run a certain script. From the
 Vagrant website, this script will install an Apache web server and tell it to
 use the `/vagrant` folder instead of `/var/www/`, add these lines to your
-Vagrantfile, under the line `config.vm.box = "ubuntu/trusty32"`:
+Vagrantfile, under the line `config.vm.box - "ubuntu/trusty32"`:
 {% highlight bash %}
 config.vm.provision "shell", inline: <<-SHELL
 
@@ -91,7 +91,7 @@ load up your file. Creating scripts like this can bring everyone on your team
 up to speed with your virtual machine.
 
 Conclusion
-==========
+----------
 I hope by now, you can successfully set up a Vagrant VM and have an understanding
 of how they can be extremely helpful in a team setting. If the words "source
 control" up above confused you, make sure to continue to read my blog, because

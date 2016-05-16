@@ -6,7 +6,7 @@ color: 3F51B5
 categories: 491 Development
 ---
 Introduction
-============
+------------
 In the world of development, having your software be portable is a critical
 idea. You want everyone in the world to be able to use your software, not just
 users running Windows or users running Linux. For a long time I had heard the
@@ -15,14 +15,14 @@ This post will look at the usefulness of virtual machines and a beginning look
 at installing and creating VM's using [Oracle's VM VirtualBox][virtualbox].
 
 What are virtual machines?
-==========================
+--------------------------
 In essence, a virtual machine is a computer inside your computer. A virtual
 machine can emulate a different operating system than the one your computer
 is currently running. In addition to emulating the software of the operating
 system chosen, it can emulate hardware as well.
 
 Why virtual machines?
-=====================
+---------------------
 You may be thinking that virtual machines sound cool, but you do not necessarily
 see how they could be useful on an everyday basis. One use for example, is that
 in the portability example above, a virtual machine would be extremely useful
@@ -43,19 +43,19 @@ works for all the members. It makes it significantly easy to collaborate across
 operating systems when you can all develop in the same environment.
 
 A VirtualBox Initiation
-=======================
+-----------------------
 We are now going to play around with creating a virtual machine and show off
 some of the capabilities that they have. To start, head over to the
 [VirtualBox website][virtualbox] and follow the steps to install VirtualBox on
 your operating system. Once you get it up and running, go ahead and type `ctrl+N`
 to create a new virtual machine. This will bring up this screen:
-![Image of Yaktocat](/virtual1.png)
+![Image of Yaktocat](/images/virtual1.png)
 As you can see, I decided to name mine `My Shiny New Virtual Machine` and I
 decided to make it run Ubuntu since I am already running Windows. On the next few
 pages, just use the recommended settings for now, you can play around with the
 amount of memory and hard drive size another time. Once you have gone through
 those steps, you will see your new virtual machine in the list of machines like so:
-![Image of Yaktocat](/virtual2.png)
+![Image of Yaktocat](/images/virtual2.png)
 You can now double click the machine and it will boot it up for you. You will
 see that it cannot boot up. The problem is that we do not have the image of the
 computer preinstalled on our machine. To fix this, head over [here][ubuntu] and

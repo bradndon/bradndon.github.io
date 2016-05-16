@@ -6,7 +6,7 @@ color: 2196F3
 categories: 491 Development
 ---
 Hello!
-======
+------
 Welcome to my blog! For the next few weeks, I will be writing five blog posts
 on development tools. Most of what I will cover will be collaborative tools.
 What this means is tools that you can use to ease the accessibility of adding
@@ -19,7 +19,7 @@ help you keep your projects organized and make it easier to return to them at
 any time.
 
 What we will learn
-==================
+------------------
 Throughout these five weeks we will learn a lot of hopefully useful information
 in topics such as creating virtual machines so that everyone is working in the
 same environment, using version control, and using a collaborative chat tool so
@@ -60,7 +60,7 @@ The five posts will be laid out as follows:
 5. Project Management: Some tools to help stay organized.
 
 What we will not learn
-======================
+----------------------
 Although we will be learning about these tools to aid our development, we will
 not actually be learning any programming or developing skills. By this I mean
 that any code samples that are not relevant to the lesson will not be explained,
@@ -71,7 +71,7 @@ VM for example, the commands given will not necessarily work on that operating
 system.
 
 How the posts will be formatted
-===============================
+-------------------------------
 Each post will be in a tutorial style, so that you can easily follow along step
 by step without getting lost. Whenever discussing something that is inside the
 computer, like a file directory, will be shown like this: `/bin`. For easy
