@@ -65,7 +65,7 @@ layout: default
   </div>
   {% for post in site.posts %}
 
-    <div class="tile tile--big" style="float:{{float}};background-color:#{{post.color}};">
+    <div class="tile tile--big" style="float:{{float}};background: url('{{post.image}}')no-repeat;background-position:center;background-size:cover; background-color:#{{post.color}};">
       <div class="tile__overlay">
         <div>
           <h3 class="overlay__title">{{ post.title}}</h3>
