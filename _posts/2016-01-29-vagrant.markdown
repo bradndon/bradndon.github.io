@@ -3,6 +3,7 @@ layout: post
 title: Vagrant, an easier way to use VMs
 date: 2016-01-29T12:30:20.000Z
 color: 673AB7
+image: vagrant.png
 categories: 491 Development
 ---
 Introduction
