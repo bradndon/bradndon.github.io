@@ -2,7 +2,7 @@
 layout: post
 title: Virtual Machines, What are they and how can they help?
 date: 2016-01-22T12:30:20.000Z
-color: 3F51B5
+color: 192D4E
 image: vbox.png
 categories: 491 Development
 ---

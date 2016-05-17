@@ -13,7 +13,7 @@ layout: default
   {% endif %}
   <div id="filler" style="clear:both;height:170px;transition: all .4s ease;"></div>
 
-  <div class="tile tile--small" style="float:{{float}};background: #000000;background: -webkit-linear-gradient(to left, #101010 , #434343);background: linear-gradient(315deg, #191919 , #303030);">
+  <div class="tile tile--small"  style="float:{{float}};background: #000000;background: -webkit-linear-gradient(to left, #101010 , #434343);background: linear-gradient(315deg, #191919 , #303030);">
     <div class="tile__shcontainer">
       <h2 class="tile__header">PROJECTS</h2>
     </div>
@@ -27,7 +27,7 @@ layout: default
       {% assign boop = true %}
       {% assign float="right" %}
     {% endif %}
-    <div class="tile tile--big" style="float:{{float}};background: url('{{project.image}}')no-repeat;background-position:center;background-size:cover; background-color:{{project.color}};">
+    <div class="tile tile--big lazy" data-original="{{project.image}}" style="float:{{float}};background: {{project.color}} no-repeat;background-position:center;background-size:cover; ">
       <div class="tile__overlay">
         <div>
           <h3 class="overlay__title">{{ project.name}}</h3>
@@ -65,13 +65,13 @@ layout: default
   </div>
   {% for post in site.posts %}
 
-    <div class="tile tile--big" style="float:{{float}};background: url('images/{{post.image}}')no-repeat;background-position:center;background-size:cover; background-color:#{{post.color}};">
-      <div class="tile__overlay">
+    <div class="tile tile--big" style="float:{{float}}; background-color:#{{post.color}};">
+      <img style="width:100%" class="lazy" data-original='images/{{post.image}}'/>
+      <div style="" class="tile__overlay">
         <div>
           <h3 class="overlay__title">{{ post.title}}</h3>
-          {{ post.excerpt }}
           <div class="buttons">
-            <a href="{{ post.url | prepend: site.baseurl }}">Read More</a>
+            <a href="{{ post.url | prepend: site.baseurl }}">Read</a>
           </div>
         </div>
       </div>
@@ -83,10 +83,28 @@ layout: default
       {% assign boop = true %}
       {% assign float="right" %}
     {% endif %}
-  {% endfor %}
+      {% endfor %}
+      <div class="tile tile--contact" style="float:{{float}};background: #000000;background: -webkit-linear-gradient(to left, #101010 , #434343);background: linear-gradient(315deg, #191919 , #303030);">
+        <div class="tile__shcontainer">
+          <h2 class="tile__header">GET IN TOUCH</h2>
+          <form action="https://formspree.io/bl.fox@live.com"
+              method="POST">
+              <input type="text" name="name" placeholder="Name">
+              <input type="email" name="_replyto" placeholder="Email">
+              <textarea name="message" placeholder="Message"></textarea>
+              <input type="hidden" name="_next" value="//bradndon.github.io/thanks.html" />
+              <input type="submit" value="Send">
+          </form>
+
+        </div>
+      </div>
 <script>
 $(function() {
-    $("img").lazyload();
+    $(".lazy").lazyload({
+      effect : "fadeIn",
+      threshold : 200,
+      effect_speed : 1000
+  });
 });
 $(window).scroll(function() {
   console.log($(this).scrollTop());

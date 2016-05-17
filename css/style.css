@@ -104,8 +104,14 @@ header {
   height:200px;
   padding:25px;
 }
+.tile--contact {
+  height: 400px;
+  padding:25px;
+
+}
 .tile__shcontainer {
   display:flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width:100%;
@@ -142,7 +148,7 @@ header {
   font-size: 1.8rem;
   text-align: center;
 }
-.tile--big:hover .tile__overlay {
+ .tile__overlay:hover {
   opacity: 1;
 }
 

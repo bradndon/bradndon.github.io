@@ -2,7 +2,8 @@
 layout: post
 title: Conclusion to the Series
 date: 2016-02-26T12:30:20.000Z
-color: 78909C
+color: 303030
+image: default.png
 categories: 491 Development
 ---
 Introduction

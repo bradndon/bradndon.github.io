@@ -2,7 +2,8 @@
 layout: post
 title: Introduction to the series
 date: 2016-01-15T12:30:20.000Z
-color: 2196F3
+color: 303030
+image: default.png
 categories: 491 Development
 ---
 Hello!
