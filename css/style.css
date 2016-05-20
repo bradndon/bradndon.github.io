@@ -105,9 +105,7 @@ header {
   padding:25px;
 }
 .tile--contact {
-  height: 400px;
   padding:25px;
-
 }
 .tile__shcontainer {
   display:flex;
@@ -151,9 +149,6 @@ header {
  .tile__overlay:hover {
   opacity: 1;
 }
-
-
-
 .overlay__title {
   text-align: center;
   font-size: 5.0rem;
@@ -166,6 +161,46 @@ header {
   font-weight: bold;
   margin-bottom: 15px;
 }
+
+input[type="text"],input[type="email"], textarea{
+  border: none;
+  padding: 10px;
+  font-size: 1.6rem;
+  width: 100%;
+  margin: 10px 0;
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(89,42,146,1);
+  -moz-box-shadow:  0px 0px 0px 0px rgba(89,42,146,1);
+  box-shadow: 0px 0px 0px 0px rgba(89,42,146,1);
+  transition: box-shadow .3s;
+}
+input[type="text"]:focus,input[type="email"]:focus, textarea:focus {
+  outline: none;
+  -webkit-box-shadow: 0px 0px 22px 4px rgba(89,42,146,1);
+  -moz-box-shadow: 0px 0px 22px 4px rgba(89,42,146,1);
+  box-shadow: 0px 0px 22px 4px rgba(89,42,146,1);
+}
+input[type="submit"] {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  background-color: transparent;
+  border: 2px solid #f9f9f9;
+  color: #f9f9f9;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: all .4s ease;
+  border-radius: 30px;
+  margin: 0px auto;
+}
+input[type="submit"]:hover {
+  text-decoration: none;
+  background-color: #f9f9f9;
+  color:#303030 !important;
+  cursor: pointer;
+}
+input[type="submit"]:visited {
+  color: #303030;
+}}
+
 @media only screen and (max-width: 880px) {
   .tile {
     width:100%;
