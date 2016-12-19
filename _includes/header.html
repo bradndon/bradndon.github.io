@@ -1,26 +1,6 @@
 
 <div>
-
-  <header>
-    <a href="https://github.com/bradndon" class="header__h1">Brandon Fox</a>
-    <p class="header__p">
-      {% if page.title %}
-        {{page.title}}
-      {% else %}
-        Lead Developer at <a href="http://www.secondsyllable.com">Second Syllable Design Co.</a>
-      {% endif %}</p>
+  <header class="wrapper">
+    <a style="width: 50%;" href="https://www.linkedin.com/in/bradndon"><img class="profile-image" src="images/profile.jpg" /></a>
+    <h1 class="site-title">Hi! I'm <a target="_blank" href="https://www.linkedin.com/in/bradndon">Brandon Fox<div class="underline"></div></a>, a full stack web developer, currently working at <a target="_blank" href="http://toolhouse.com/">toolhouse inc.<div class="underline"></div></a> I recently graduated from <a target="_blank" href="https://wwu.edu">Western Washington University<div class="underline"></div></a> and am pursuing my dream of ...</h1>
   </header>
-<script>
-var boop = 0
-
-$(window).scroll(function() {
-  if ($(this).scrollTop() > 1){
-    $('header').addClass("sticky");
-    $('#filler').css("transition", "transition:height .4s ease");
-    $('#filler').css("height", "65px");
-  } else{
-    $('header').removeClass("sticky");
-    $('#filler').css("height", "170px");
-  }
-});
-</script>

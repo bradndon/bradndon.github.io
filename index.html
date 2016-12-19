@@ -3,46 +3,34 @@ layout: default
 ---
 
 <div style="width:100%; float:left">
-  {% assign boop = true %}
-  {% if boop %}
-    {% assign boop = false %}
-    {% assign float="left" %}
-  {% else %}
-    {% assign boop = true %}
-    {% assign float="right" %}
-  {% endif %}
-  <div id="filler" style="clear:both;height:170px;transition: all .4s ease;"></div>
-
-  <div class="tile tile--small"  style="float:{{float}};background: #000000;background: -webkit-linear-gradient(to left, #101010 , #434343);background: linear-gradient(315deg, #191919 , #303030);">
-    <div class="tile__shcontainer">
-      <h2 class="tile__header">PROJECTS</h2>
-    </div>
-  </div>
-
+  {% assign left = true %}
   {% for project in site.data.projects %}
-    {% if boop %}
-      {% assign boop = false %}
-      {% assign float="left" %}
-    {% else %}
-      {% assign boop = true %}
-      {% assign float="right" %}
-    {% endif %}
-    <div class="tile tile--big lazy" data-original="{{project.image}}" style="float:{{float}};background: {{project.color}} no-repeat;background-position:center;background-size:cover; ">
-      <div class="tile__overlay">
+  {% if left %}
+  {% assign left = false %}
+  {% assign float="right" %}
+{% else %}
+  {% assign left = true %}
+  {% assign float="left" %}
+{% endif %}
+    <div class="wrapper">
+      <div style="width: 50%; padding: 50px; float: {{float}};">
+        <img data-original='{{project.image}}' class="lazy" style="max-width: 100%;"/>
+      </div>
+      <div class="" style="float: {{float}}; width: 50%; padding: 50px;">
         <div>
-          <h3 class="overlay__title">{{ project.name}}</h3>
+          <h3 class="project-title"><a href="{{project.buttons[0].link}}">{{ project.name}}<div class="underline underline--small"></div></a></h3>
           <p>{{ project.desc }}</p>
           {% if project.tools %}
-            <h4 class="overlay__tools">Technologies Used</h4>
-            <div>
+            <h4>Technologies Used</h4>
+            <div class="tools">
               {% for tool in project.tools %}
-              <img style="width:64px; margin-bottom:15px;" alt={{tool.alt}} src="images/{{tool.img}}.png"/>
+              <img style="width:64px;align-self: center; margin-bottom:15px;" alt={{tool.alt}} src="images/{{tool.img}}.png"/>
               {% endfor %}
             </div>
           {% endif %}
           <div class="buttons">
             {% for button in project.buttons %}
-            <a target="_blank" href="{{button.link}}">{{button.title}}</a>
+            <a class="button" target="_blank" href="{{button.link}}">{{button.title}}</a>
             {% endfor %}
           </div>
 
@@ -51,21 +39,14 @@ layout: default
     </div>
 
   {% endfor %}
-  {% if boop %}
-    {% assign boop = false %}
-    {% assign float="left" %}
-  {% else %}
-    {% assign boop = true %}
-    {% assign float="right" %}
-  {% endif %}
-  <div class="tile tile--small" style="float:{{float}};background: #000000;background: -webkit-linear-gradient(to left, #101010 , #434343);background: linear-gradient(315deg, #191919 , #303030);">
+  <!-- <div class="tile tile--small" style="background: #000000;background: -webkit-linear-gradient(to left, #101010 , #434343);background: linear-gradient(315deg, #191919 , #303030);">
     <div class="tile__shcontainer">
       <h2 class="tile__header">BLOG POSTS</h2>
     </div>
   </div>
   {% for post in site.posts %}
 
-    <div class="tile tile--big" style="float:{{float}}; background-color:#{{post.color}};">
+    <div class="tile tile--big" style="background-color:#{{post.color}};">
       <img style="width:100%" class="lazy" data-original='images/{{post.image}}'/>
       <div style="opacity: 1; background-color: rgba(240,240,240,.4)" class="tile__overlay">
         <div>
@@ -76,15 +57,8 @@ layout: default
         </div>
       </div>
     </div>
-    {% if boop %}
-      {% assign boop = false %}
-      {% assign float="left" %}
-    {% else %}
-      {% assign boop = true %}
-      {% assign float="right" %}
-    {% endif %}
       {% endfor %}
-      <div class="tile tile--contact" style="float:{{float}};background: #000000;background: -webkit-linear-gradient(to left, #101010 , #434343);background: linear-gradient(315deg, #191919 , #303030);">
+      <div class="tile tile--contact" style="background: #000000;background: -webkit-linear-gradient(to left, #101010 , #434343);background: linear-gradient(315deg, #191919 , #303030);">
         <div class="tile__shcontainer" style="padding:25px;">
           <h2 class="tile__header">GET IN TOUCH</h2>
           <form action="https://formspree.io/bl.fox@live.com"
@@ -97,7 +71,7 @@ layout: default
           </form>
 
         </div>
-      </div>
+      </div> -->
 <script>
 $(function() {
     $(".lazy").lazyload({
@@ -105,26 +79,6 @@ $(function() {
       threshold : 200,
       effect_speed : 1000
   });
-});
-$(window).scroll(function() {
-  console.log($(this).scrollTop());
-  if ($(this).scrollTop() > 1233 && boop != 2) {
-    boop = 2;
-    $('.header__h1').fadeOut(300, function() {
-      $(this).text('Brandon Fox\'s Blog').fadeIn(300);
-    });
-  } else if ($(this).scrollTop() > 75 && $(this).scrollTop() <= 1233 && boop != 1){
-    boop = 1;
-    $('.header__h1').fadeOut(300, function() {
-        $(this).text('Brandon Fox\'s Projects').fadeIn(300);
-    });
-  } else if ($(this).scrollTop() <= 75 && boop != 0) {
-    boop = 0;
-    $('.header__h1').fadeOut(300, function() {
-      $(this).text('Brandon Fox').fadeIn(300);
-
-    });
-  }
 });
 </script>
 </div>

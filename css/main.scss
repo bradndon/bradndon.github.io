@@ -6,7 +6,7 @@
 
 
 // Our variables
-$base-font-family: "Lato", Arial, sans-serif;
+$base-font-family: "Open Sans", Arial, sans-serif;
 $base-font-size:   62.5%;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
@@ -14,8 +14,9 @@ $base-line-height: 1.5;
 $spacing-unit:     30px;
 
 $text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$background-color: #fafafa;
+$brand-color:      #9068BE;
+$accent-color:     #E62739;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -57,7 +58,7 @@ $on-laptop:        800px;
     font-size: 21px;
   }
   a {
-    color: #303030;
+    color: $brand-color;
     border-bottom: 1px dotted #000;
     text-decoration: none;
 

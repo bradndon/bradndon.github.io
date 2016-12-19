@@ -11,82 +11,63 @@
 }
 
 .site-title {
-    font-size: 26px;
-    line-height: 56px;
-    letter-spacing: -1px;
+    font-size: 2.6rem;
+    line-height: 4.4rem;
+    letter-spacing: 1px;
     margin-bottom: 0;
     float: left;
-
+    width: 50%;
+    max-width: 500px;
+    margin: 0 auto;
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: $brand-color;
     }
 }
-
-.site-nav {
-    float: right;
-    line-height: 56px;
-
-    .menu-icon {
-        display: none;
-    }
-
-    .page-link {
-        color: $text-color;
-        line-height: $base-line-height;
-
-        // Gaps between nav items, but not on the first one
-        &:not(:first-child) {
-            margin-left: 20px;
-        }
-    }
-
-    @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: 30px;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
-
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
-
-            > svg {
-                width: 18px;
-                height: 15px;
-
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
-        }
-
-        .trigger {
-            clear: both;
-            display: none;
-        }
-
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
-
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-        }
-    }
+.profile-image {
+  border-radius: 50%;
+  float: left;
+  padding: 50px;
 }
 
+header {
+  display: flex;
+  align-items: center;
+}
 
+.project-title {
+  font-size: 2.4rem;
+}
+
+.tools {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  background-color: $brand-color;
+  border-radius: 5px;
+  color: $background-color;
+  padding: 10px 15px;
+  font-size: 1.8rem;
+  margin: 0;
+  margin-right: 5px;
+  letter-spacing: 1px;
+  &:visited {
+    color: $background-color;
+  }
+  &:hover {
+    background-color: $accent-color;
+    color: $background-color;
+  }
+}
 
 /**
  * Site footer
