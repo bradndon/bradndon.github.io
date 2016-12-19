@@ -19,6 +19,14 @@
   }
 }
 
+.heading {
+  color: $brand-color;
+  font-size: 2.8rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  margin-top: 15px;
+}
+
 .site-title {
     font-size: 2.6rem;
     line-height: 4.4rem;
@@ -26,11 +34,13 @@
     margin-bottom: 0;
     float: left;
     width: 100%;
-    max-width: 860px;
+    max-width: 800px;
     margin: 0 auto;
     @include media-query($on-palm) {
       float: none;
       width: 100%;
+      font-size: 2.2rem;
+      line-height: 4.0rem;
     }
     &,
     &:visited {
@@ -43,8 +53,8 @@
 
 .project-image {
   border: 4px solid $accent-color;
-  transition: .4s border-color, .4s padding, .4s border-width;
-  padding: 5px;
+  transition: .4s border-color, .4s padding;
+  padding: 10px;
   &__link:hover > .project-image {
     border-color: $brand-color;
     padding: 0px;
@@ -57,6 +67,10 @@
   margin-right: 40px;
   width: 50%;
   max-width: 250px;
+  @include media-query($on-laptop) {
+    width: 30%;
+    margin-right: 20px;
+  }
 }
 
 header {
@@ -84,6 +98,7 @@ header {
 }
 
 .button {
+  border: none;
   background-color: $brand-color;
   border-radius: 5px;
   color: $background-color;
@@ -92,16 +107,41 @@ header {
   margin: 0;
   margin-right: 5px;
   letter-spacing: 1px;
+  transition: .4s all;
   &:visited {
     color: $background-color;
   }
   &:hover {
     background-color: $accent-color;
     color: $background-color;
+    cursor: pointer;
   }
 }
 
+.contact-me {
+  font-size: 3.0rem;
+}
 
+.footer-header {
+  color: $brand-color;
+  font-size: 2.6rem;
+  padding-top: 25px;
+  margin-bottom: 0
+}
+
+
+footer {
+  margin-bottom: 30px;
+}
+
+.icons {
+  margin-top: 20px;
+  font-size: 4.0rem;
+  display: flex;
+  justify-content: space-between;
+  max-width: 200px;
+  margin: 0 auto;
+}
 
 /**
  * Page content
@@ -132,6 +172,7 @@ header {
     display: block;
     font-size: 24px;
 }
+
 
 
 

@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+<div class="wrapper"><h2 class="section heading">Recent Projects</h2></div>
 
 <div style="width:100%; float:left">
   {% assign left = true %}
@@ -24,7 +25,7 @@ layout: default
             <h4>Technologies Used</h4>
             <div class="tools">
               {% for tool in project.tools %}
-              <img style="width:64px;align-self: center; margin-bottom:15px;" alt={{tool.alt}} src="images/{{tool.img}}.png"/>
+              <img style="width:64px;align-self: center; margin-bottom:15px;" alt="{{tool.alt}}" src="images/{{tool.img}}.png"/>
               {% endfor %}
             </div>
           {% endif %}
@@ -39,39 +40,11 @@ layout: default
     </div>
 
   {% endfor %}
-  <!-- <div class="tile tile--small" style="background: #000000;background: -webkit-linear-gradient(to left, #101010 , #434343);background: linear-gradient(315deg, #191919 , #303030);">
-    <div class="tile__shcontainer">
-      <h2 class="tile__header">BLOG POSTS</h2>
-    </div>
-  </div>
-  {% for post in site.posts %}
+</div>
+<div style="clear: both;">
 
-    <div class="tile tile--big" style="background-color:#{{post.color}};">
-      <img style="width:100%" class="lazy" data-original='images/{{post.image}}'/>
-      <div style="opacity: 1; background-color: rgba(240,240,240,.4)" class="tile__overlay">
-        <div>
-          <h3 class="overlay__title">{{ post.title}}</h3>
-          <div class="buttons">
-            <a href="{{ post.url | prepend: site.baseurl }}">Read</a>
-          </div>
-        </div>
-      </div>
-    </div>
-      {% endfor %}
-      <div class="tile tile--contact" style="background: #000000;background: -webkit-linear-gradient(to left, #101010 , #434343);background: linear-gradient(315deg, #191919 , #303030);">
-        <div class="tile__shcontainer" style="padding:25px;">
-          <h2 class="tile__header">GET IN TOUCH</h2>
-          <form action="https://formspree.io/bl.fox@live.com"
-              method="POST" style="width:100%;padding:0 100px;text-align:center;">
-              <input type="text" name="name" placeholder="NAME"><br>
-              <input type="email" name="_replyto" placeholder="EMAIL"><br>
-              <textarea rows="5" name="message" placeholder="MESSAGE"></textarea><br>
-              <input type="hidden" name="_next" value="//bradndon.github.io/thanks.html" />
-              <input type="submit" value="Send">
-          </form>
+</div>
 
-        </div>
-      </div> -->
 <script>
 $(function() {
     $(".lazy").lazyload({
