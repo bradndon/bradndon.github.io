@@ -73,7 +73,7 @@
 }, {
     name: "WPF Scavenger Hunt Creator",
     color: "rgb(216,93,51)",
-    image: "images/wpfscavenger.png",
+    image: "images/wpfScavenger.png",
     desc: "A PDF template creator for a local math teacher to automate some of the work required to create activities for class. By specifying images for the questions and answers, the application will create a randomized PDF for a math scavenger hunt.",
     buttons: [{
       title: "View Code",
