@@ -13,8 +13,8 @@ layout: default
   {% assign float="left" %}
 {% endif %}
     <div class="wrapper">
-      <div class="section" style=" float: {{float}};">
-        <img data-original='{{project.image}}' class="lazy" style="max-width: 100%; height: 240px"/>
+      <div class="section section--small" style=" float: {{float}};">
+        <a class="project-image__link" target="_blank" href="{{project.buttons[0].link}}"><img data-original='{{project.image}}' class="lazy project-image" style="max-width: 100%;"/></a>
       </div>
       <div class="section" style="float: {{float}};">
         <div>

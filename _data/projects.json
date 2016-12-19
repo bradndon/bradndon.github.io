@@ -18,7 +18,7 @@
 }, {
     name: "Real Sports Pearls",
     color: "rgb(40,62,71)",
-    image: "images/rsp.jpg",
+    image: "images/rsp.png",
     desc: "A complete redesign of the website for Real Sports Pearls, giving the user a way to visualize the necklace they are going to buy before purchasing. Leveraging responsive design techniques, the website is now accessible on any device.",
     buttons: [
       {
@@ -60,6 +60,10 @@
     buttons: [{
       title: "View in App Store",
       link: "https://itunes.apple.com/us/app/wwu-classfinder/id860241453?ls=1&mt=8",
+    },
+    {
+      title: "View Code",
+      link: "https://github.com/bradndon/wwu_classfinder",
       }
     ],
     tools: [
@@ -69,6 +73,7 @@
 }, {
     name: "WPF Scavenger Hunt Creator",
     color: "rgb(216,93,51)",
+    image: "images/wpfscavenger.png",
     desc: "A PDF template creator for a local math teacher to automate some of the work required to create activities for class. By specifying images for the questions and answers, the application will create a randomized PDF for Scavenger Hunts.",
     buttons: [{
       title: "View Code",
