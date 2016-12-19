@@ -2,7 +2,7 @@
     name: "Pomodoro Timer",
     color: "#303030",
     image: "images/tomato.png",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nibh augue, suscipit eget ante vitae, blandit molestie justo. Cras ac sollicitudin mi, quis blandit ipsum. Vivamus a massa ac tellus elementum dignissim a nec nisl. Nulla vel blandit felis. Pellentesque consequat purus dui, at venenatis erat elementum a. In a orci vitae ipsum pellentesque molestie. Mauris nec lectus sed massa.",
+    desc: "A simple implementation of a Pomodoro timer using React. I created this to practice my React skills as well as design. The design for the timer is more visually focused, the tomato shrinks as the timer counts down. This way you can quickly switch to the tab and know about how much time you have left without needing to read the timer.",
     buttons: [{
       title: "View Site",
       link: "https://bradndon.github.io/Pomodoro",
@@ -38,7 +38,7 @@
     name: "Elevator Simulation",
     color: "#f9f9f9",
     image: "images/elevator.png",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nibh augue, suscipit eget ante vitae, blandit molestie justo. Cras ac sollicitudin mi, quis blandit ipsum. Vivamus a massa ac tellus elementum dignissim a nec nisl. Nulla vel blandit felis. Pellentesque consequat purus dui, at venenatis erat elementum a. In a orci vitae ipsum pellentesque molestie. Mauris nec lectus sed massa.",
+    desc: "I was asked to create this simulation for a local math teacher to help visually show her students how slope works. Being able to change the starting position and speed at which the elevators move makes it easy to see the ramifications of these actions.",
     buttons: [
       {
         title: "View Site",
@@ -56,7 +56,7 @@
     name: "iOS WWU Classfinder",
     color: "rgb(73,172,240)",
     image: "images/classfinder.png",
-    desc: "Created out of frustration with the lack of responiveness the school's version had, the WWU Classfinder app has helped over 1500 students find classes. It integrates some much needed features on top of the existing pieces of the website: Easy schedule mockups, RateMyProfessor scores, and being able to find books needed for classes. Created using Objective-C to create finely tuned web scrapers written to deal with the poorly managed HTML.",
+    desc: "Created out of frustration with the lack of responiveness the school's version had, the WWU Classfinder app has helped over 1500 students find classes. It integrates some much needed features on top of the existing pieces of the website: Easy schedule mockups, RateMyProfessor scores, and being able to find books needed for classes. Using Objective-C to create finely tuned web scrapers written to deal with the poorly managed HTML, this application makes finding classes a breeze.",
     buttons: [{
       title: "View in App Store",
       link: "https://itunes.apple.com/us/app/wwu-classfinder/id860241453?ls=1&mt=8",
@@ -74,7 +74,7 @@
     name: "WPF Scavenger Hunt Creator",
     color: "rgb(216,93,51)",
     image: "images/wpfscavenger.png",
-    desc: "A PDF template creator for a local math teacher to automate some of the work required to create activities for class. By specifying images for the questions and answers, the application will create a randomized PDF for Scavenger Hunts.",
+    desc: "A PDF template creator for a local math teacher to automate some of the work required to create activities for class. By specifying images for the questions and answers, the application will create a randomized PDF for a math scavenger hunt.",
     buttons: [{
       title: "View Code",
       link: "https://github.com/bradndon/Scavenger_Hunt",
