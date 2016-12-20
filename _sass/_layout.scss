@@ -13,6 +13,9 @@
   &--small {
     padding: 50px;
     width: 48%;
+    @include media-query($on-palm) {
+      padding: 15px; 
+    }
   }
   p {
     font-size: 1.6rem;
@@ -95,6 +98,9 @@ header {
 .buttons {
   display: flex;
   justify-content: center;
+  @include media-query($on-palm) {
+    flex-direction: column;
+  }
 }
 
 .button {
@@ -115,6 +121,10 @@ header {
     background-color: $accent-color;
     color: $background-color;
     cursor: pointer;
+  }
+  @include media-query($on-palm) {
+    margin-bottom: 10px;
+    text-align: center;
   }
 }
 
